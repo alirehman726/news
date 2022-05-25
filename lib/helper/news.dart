@@ -30,15 +30,7 @@ class News {
             content: element["content"],
             // publshedAt: DateTime.parse(element['publishedAt']),
           );
-          // Article article = Article(
-          //   title: element['title'],
-          //   author: element['author'],
-          //   description: element['description'],
-          //   urlToImage: element['urlToImage'],
-          //   publshedAt: DateTime.parse(element['publishedAt']),
-          //   content: element["content"],
-          //   articleUrl: element["url"],
-          // );
+        
           news.add(article);
         }
       });

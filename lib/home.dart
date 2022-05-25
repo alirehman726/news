@@ -1,8 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:news/detail_screen.dart';
-import 'package:news/helper/data.dart';
+import 'package:news/detail_screen.dart'; 
 import 'package:news/helper/news.dart';
 import 'package:news/login_screen.dart';
 import 'package:news/model/article_model.dart';
@@ -41,8 +40,7 @@ class _HomeState extends State<Home> {
 
   @override
   void initState() {
-    super.initState();
-    categories = getCategories();
+    super.initState(); 
     getNews();
   }
 
@@ -89,22 +87,7 @@ class _HomeState extends State<Home> {
               child: Container(
                 child: Column(
                   children: [
-                    /// Category
-                    // Container(
-                    //   padding: EdgeInsets.symmetric(horizontal: 16),
-                    //   height: 70,
-                    //   child: ListView.builder(
-                    //     shrinkWrap: true,
-                    //     scrollDirection: Axis.horizontal,
-                    //     itemCount: categories.length,
-                    //     itemBuilder: (context, index) {
-                    //       return CategoryTile(
-                    //         imageUrl: categories[index].imageUrl,
-                    //         categoryName: categories[index].categoryName,
-                    //       );
-                    //     },
-                    //   ),
-                    // ),
+                     
 
                     /// Blog
                     Container(
@@ -118,23 +101,12 @@ class _HomeState extends State<Home> {
                             imageUrl: articles[index].urlToImage,
                             title: articles[index].title,
                             desc: articles[index].description,
-                            // imageUrl: articles[index].urlToImage,
-                            // title: articles[index].title,
-                            // desc: articles[index].description,
+                            
                           );
                         },
                       ),
                     ),
-                    // Container(
-                    //   child: ListView.builder(
-                    //       itemCount: articles.length,
-                    //       itemBuilder: (context, index) {
-                    //         return BlogTile(
-                    //             imageUrl: articles[index].urlToImage,
-                    //             title: articles[index].title,
-                    //             desc: articles[index].description);
-                    //       }),
-                    // ),
+                   
                   ],
                 ),
               ),

@@ -21,11 +21,7 @@ class _DetailScreenState extends State<DetailScreen> {
               'News',
               style: TextStyle(color: Colors.black),
             ),
-            // Text(
-            //   'News',
-            //   // user?.displayName ?? '',
-            //   style: TextStyle(color: Colors.blue),
-            // )
+            
           ],
         ),
         centerTitle: true,

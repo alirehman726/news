@@ -29,9 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text('Flutter Google Login'),
-      // ),
+      
       body: Container(
         alignment: Alignment.center,
         child: _buildWidget(),
@@ -40,34 +38,10 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   _buildWidget() {
-    // bool isSignedIn = false;
+      
     GoogleSignInAccount? user = _currentUser;
     if (user != null) {
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => TabBarScreen()));
-
-      // return Padding(
-      //   padding: EdgeInsets.all(12.0),
-      //   child: Column(
-      //     children: [
-      //       ListTile(
-      //         leading: GoogleUserCircleAvatar(identity: user),
-      //         title: Text(user.displayName ?? ''),
-      //         subtitle: Text(user.email),
-      //       ),
-      //       const SizedBox(height: 20),
-      //       const Text(
-      //         'Signed in Successfully',
-      //         style: TextStyle(fontSize: 20),
-      //       ),
-      //       const SizedBox(height: 10),
-      //       ElevatedButton(
-      //         onPressed: signOut,
-      //         child: Text('Sign out'),
-      //       )
-      //     ],
-      //   ),
-      // );
+     
     } else {
       return Padding(
         padding: EdgeInsets.all(12.0),

@@ -15,8 +15,6 @@ class _TabBarScreenState extends State<TabBarScreen> {
   final _pages = [
     Home(),
     BookMark(),
-    // ProductPage(),
-    // Expeness(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -35,28 +33,14 @@ class _TabBarScreenState extends State<TabBarScreen> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
-            // title: Text('Home'),
             label: 'Home',
             backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bookmark),
-            // title: Text('Customer'),
             label: 'Customer',
             backgroundColor: Colors.blue,
           ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.production_quantity_limits),
-          //   // title: Text('Customer'),
-          //   label: 'Product',
-          //   backgroundColor: Colors.blue,
-          // ),
-          // BottomNavigationBarItem(
-          //   icon: Icon(Icons.event_available_outlined),
-          //   // title: Text('Expenses'),
-          //   label: 'Expenses',
-          //   backgroundColor: Colors.blue,
-          // ),
         ],
         fixedColor: Colors.grey.shade800,
         onTap: (index) {

@@ -4,16 +4,7 @@ class ArticleModel {
   String description;
   String url;
   String urlToImage;
-  String content;
-  // DateTime publshedAt;
-  // String articleUrl;
-  // String title;
-  // String author;
-  // String description;
-  // String urlToImage;
-  // DateTime publshedAt;
-  // String content;
-  // String articleUrl;
+  String content; 
 
   ArticleModel({
     required this.author,
@@ -21,15 +12,6 @@ class ArticleModel {
     required this.description,
     required this.url,
     required this.urlToImage,
-    required this.content,
-    // required this.publshedAt,
-    // required this.articleUrl,
-    // required this.title,
-    // required this.description,
-    // required this.author,
-    // required this.content,
-    // required this.publshedAt,
-    // required this.urlToImage,
-    // required this.articleUrl,
+    required this.content, 
   });
 }
